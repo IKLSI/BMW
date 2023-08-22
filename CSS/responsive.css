@@ -1,0 +1,82 @@
+/* Style pour la partie responsive de la page à savoir les écrans de taille inférieure */
+
+@media screen and (max-width:900px) {
+	.Menu-Btn {
+		display: block;
+		font-size: 1.2em;
+		cursor: pointer;
+	}
+
+	.Menu-Btn:hover {
+		color: #333;
+	}
+
+	.brand,
+	.Menu-Btn {
+		z-index: 1;
+		position: relative;
+	}
+
+	.Menu {
+		z-index: 0;
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 0;
+		padding: 0;
+		overflow-y: hidden;
+		background: #161616;
+		transition: 0.6s ease-in-out;
+	}
+
+	.menu-open {
+		height: 17em;
+		padding: 5em 0 1em 0;
+	}
+
+	.Menu li {
+		display: block;
+		margin: 1em 0;
+	}
+
+	.specs ul {
+		width: 80vw;
+	}
+
+	.infos,
+	.info,
+	.stats {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.infos {
+		gap: 3em;
+	}
+
+	.info img {
+		margin: 0 0 1em 0;
+	}
+
+	.panels,
+	.panels-sm {
+		grid-template-columns: 1fr;
+	}
+
+	.panel,
+	.panel-lg {
+		min-height: 15em;
+	}
+
+	.panel:nth-child(2) {
+		order: 1;
+	}
+}
+
+@media screen and (max-width:600px) {
+	html {
+		font-size: 14px;
+	}
+}
